@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baskhara</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+<body>
+    <py-script>
+def baskhara(a=0, b=0, c=0):
+        delta = b*b + (-4 * a * c) 
+        print(f"Valor de delta: {delta}")
+
+        if delta < 0 or float(delta) == True:
+            print("Delta invalido!")
+        else:
+            delta **= 0.5
+
+            print(f"Raiz de delta: {delta}") <!-- 3 -->
+
+            x1 = (-b + delta) / (2 * a) <!-- (-3 + 3) / 2 * 2 =  0-->
+            print(f"valor de x1: {x1:.1f}") 
+
+            x2 = (-b - delta) / (2 * a) <!-- (-3 -3) / 2 * 2 = 1.5 -->
+            print(f"valor de x2: {x2:.1f}")
+
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
+baskhara(num1, num2, num3)
+    </py-script>
+</body>
+</html>

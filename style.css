@@ -1,0 +1,21 @@
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #9a14ac;
+    overflow: hidden;
+
+    display: block;
+}
+
+py-script {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: #fefefe;
+
+    margin-left: -2em;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 20%;
+}
